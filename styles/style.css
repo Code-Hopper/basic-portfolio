@@ -134,7 +134,7 @@
     transition: all 0.5s ease;
 }
 
-.navbar-nav .nav-item .nav-link:hover{
+.navbar-nav .nav-item .nav-link:hover {
     color: rgba(var(--color2), 1);
 }
 
@@ -177,11 +177,43 @@
 
 /* about-work-container */
 
-.about-work-container .info .text{
+.about-work-container{
+    /* height: 600px; */
+    overflow: hidden;
+}
+
+.about-work-container .info .text {
     background-color: rgba(var(--color1), 1);
     color: rgba(var(--light), 1);
     display: flex;
     gap: 1rem;
     flex-direction: column;
     justify-content: center;
+}
+
+.corousel-image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.corousel-controls {
+    background-color: rgba(var(--color3), 1);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.corousel-controls .buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.corousel-controls button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
 }
