@@ -217,3 +217,49 @@
     border: none;
     outline: none;
 }
+
+#portfolio{
+    padding: 10rem 0;
+}
+
+#pop-over-image{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(var(--color1), .5);
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding: 10rem;
+}
+
+#pop-over-image > .content{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#contact{
+    background-color: rgba(var(--light), 1);
+}
+
+#map > iframe{
+    filter: grayscale(1);
+    transition: all 0.5s ease;
+}
+
+#map > iframe:hover{
+    filter: grayscale(0);
+}
+
+#main-footer{
+    background-color: rgba(var(--dark), 1);
+    color: rgba(var(--light), 1);
+    padding: 5rem 0;
+}

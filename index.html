@@ -21,7 +21,7 @@
     <section id="hero">
         <div class="hero-container">
             <div class="video-container">
-                <video autoplay loop>
+                <video id="hero-video" autoplay loop>
                     <source src="./media/hero.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -43,7 +43,7 @@
     </section>
     <!-- hero end -->
     <!-- navbar start-->
-    <header id="navbar" class="container-fluid shadow-sm position-sticky top-0">
+    <header id="navbar" class="container-fluid shadow-sm position-sticky top-0 z-3">
         <div class="container">
             <nav class="navbar navbar-expand justify-content-between align-items-center navbar-light">
                 <div class="navbar-brand d-flex align-items-center gap-3">
@@ -106,8 +106,10 @@
                     </div>
                 </div>
                 <div class="corousel position-relative col px-0">
-                    <div class="corousel-image-container bg-dark p-0 position-relative" style="width:100%; height:100%;">
-                        <img id="about-corousel" class="img-fluid position-absolute top-0 start-0 w-100 h-100" src="./media/about-2-img.jpg" alt="" style="object-fit:cover;">
+                    <div class="corousel-image-container bg-dark p-0 position-relative"
+                        style="width:100%; height:100%;">
+                        <img id="about-corousel" class="img-fluid position-absolute top-0 start-0 w-100 h-100"
+                            src="./media/about-2-img.jpg" alt="" style="object-fit:cover;">
                     </div>
                     <div class="corousel-controls w-50 py-3 px-2">
                         <div class="row">
@@ -131,6 +133,182 @@
     </section>
 
     <!-- about end -->
+
+    <!-- portfolio start-->
+
+    <section id="portfolio">
+        <div class="container-fluid">
+            <h1 class="text-center pb-5">Portfolio</h1>
+            <div class="container">
+                <div class="row gap-3">
+                    <div class="col p-2">
+                        <!-- card 1 -->
+                        <div class="portfolio-item-card">
+                            <img id="" class="img-fluid portfolio-img" src="./media/portfolio-grid/img1.jpg"
+                                data-title="E-Commerce Platform" data-discription="created using MERN Stack" alt="">
+                            <div class="bg-white d-flex flex-column p-4">
+                                <span class="fs-3 fw-bolder">E-Commerce Platform</span>
+                                <span class="fw-medium">created using MERN Stack</span>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="portfolio-item-card mt-4">
+                            <img id="" class="img-fluid portfolio-img" src="./media/portfolio-grid/img3.jpg"
+                                data-title="Tracker Navigation System" data-discription="created using Java" alt="">
+                            <div class="bg-white d-flex flex-column p-4">
+                                <span class="fs-3 fw-bolder">Tracker Navigation System</span>
+                                <span class="fw-medium">created using Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <!-- card 1 -->
+                        <div class="portfolio-item-card">
+                            <img id="" class="img-fluid portfolio-img" src="./media/portfolio-grid/img2.jpg"
+                                data-title="Fitness Tracker" data-discription="created using React Native" alt="">
+                            <div class="bg-white d-flex flex-column p-4">
+                                <span class="fs-3 fw-bolder">Fitness Tracker</span>
+                                <span class="fw-medium">created using React Native</span>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="portfolio-item-card mt-4">
+                            <img id="" class="img-fluid portfolio-img" src="./media/portfolio-grid/img4.jpg"
+                                data-title="CRM-I Dashboard" data-discription="created using React.js" alt="">
+                            <div class="bg-white d-flex flex-column p-4">
+                                <span class="fs-3 fw-bolder">CRM-I Dashboard</span>
+                                <span class="fw-medium">created using React.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- popover img section  -->
+
+                <div id="pop-over-image">
+                    <div class="content position-relative">
+                        <div class="img overflow-hidden w-100 h-100">
+                            <img id="pop-over-image-data" class="img-fluid" src="./media/about-1-img.jpg" alt="">
+                        </div>
+                        <div
+                            class="discription bg-white d-flex flex-column justify-content-center align-items-center p-4">
+                            <!-- fetched -->
+                            <h1 id="pop-over-title">title</h1>
+                            <span id="pop-over-discription">discription</span>
+                        </div>
+
+                        <button id="close-pop-over-btn"
+                            class="close-btn btn btn-danger position-absolute start-100 top-0 translate-middle rounded-circle">
+                            <span class="fa-solid fa-times"></span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio end -->
+
+    <!-- footer start -->
+
+    <section id="contact">
+        <div class="container-fluid">
+            <h1 class="text-center py-5">Contact Me !</h1>
+            <div class="container position-relative">
+                <div class="contact-container w-75 p-5 position-relative start-50 translate-middle-x">
+                    <form class="d-flex gap-5 flex-column" action="">
+                        <div class="row gap-3">
+                            <div class="col d-flex flex-column gap-3">
+                                <label class="fw-bold" for="">Name</label>
+                                <input class="form-control rounded-0 p-2" type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="col d-flex flex-column gap-3">
+                                <label class="fw-bold" for="">Email</label>
+                                <input class="form-control rounded-0 p-2" type="email" placeholder="Email Address"
+                                    name="" id="" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex flex-column gap-3 ">
+                                <label class="fw-bold" for="">Message</label>
+                                <textarea class="form-control rounded-0" placeholder="Enter Message..." rows="8" name=""
+                                    id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="">Please Select Services</label>
+                            <div class="d-flex gap-3 justify-content-between pt-4">
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="">Web Development</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="">Digital Marketing</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="">Mobile Development</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center ">
+                                <button class="btn btn-danger w-50">Submit Form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.90027737529!2d78.99010914920589!3d21.161225995229824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1750086011115!5m2!1sen!2sin"
+            height="500" class="w-100" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer id="main-footer">
+        <div class="contact-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-column gap-5">
+                        <span class="fw-bold fs-2">Code-Hopper</span>
+                        <span class="fw-bold fs-4">codehopper@gamil.com</span>
+                        <div class="d-flex gap-3">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </div>
+                    <div class="col text-end">
+                        <ul style="list-style: none;" class="p-0 d-flex gap-4 flex-column justify-content-between">
+                            <li>
+                                Email Us : code-hoper@gmail.com
+                            </li>
+                            <li>
+                                Call Us : +91 9766696550
+                            </li>
+                            <li>
+                                Reach Us : Sakkaradhara , Nagpur
+                            </li>
+                            <li>
+                                All rights reserved © code-hopper | Developed By Code-Hopper @ 2025
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
 
 </body>
 <!-- custom js -->
